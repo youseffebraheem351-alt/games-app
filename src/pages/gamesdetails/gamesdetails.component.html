@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Throne And Liberty - Game Details</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gradient-to-r from-blue-900 via-purple-900 to-gray-800 p-20 text-white">
+
+    <h1 class="text-4xl mb-10 font-bold text-yellow-400">Details Game</h1>
+
+    <div class="flex flex-col md:flex-row gap-6 bg-gray-900 p-6 rounded-xl shadow-lg">
+      <!-- Game Image -->
+      <img
+        [src]="games.thumbnail"
+        alt="Throne And Liberty"
+        class="w-[500px] h-[300px] object-cover rounded-lg shadow-md"
+      />
+
+      <!-- Game Info -->
+      <div class="flex-1">
+        <h2 class="text-3xl font-bold mb-2 text-yellow-300">{{games.title}}</h2>
+
+        <p class="mb-2">
+          <span class="font-bold text-yellow-400">Category:</span>
+          <span class="bg-cyan-500 text-black px-2 py-1 rounded text-sm ml-2">{{games.genre}}</span>
+        </p>
+
+        <p class="mb-2">
+          <span class="font-bold text-yellow-400">Platform:</span>
+          <span class="bg-cyan-500 text-black px-2 py-1 rounded text-sm ml-2">{{games.platform}}</span>
+        </p>
+
+        <p class="mb-4">
+          <span class="font-bold text-yellow-400">Status:</span>
+          <span class="bg-cyan-500 text-black px-2 py-1 rounded text-sm ml-2">Live</span>
+        </p>
+
+        <!-- Game Description -->
+        <p class="leading-relaxed text-sm md:text-base text-gray-200 mb-6">
+          {{games.short_description}}
+        </p>
+
+        <!-- Show Button -->
+        <button 
+          (click)="openGame(games.game_url)" 
+          class="bg-yellow-400 text-black hover:bg-yellow-500 hover:text-white border border-yellow-400 px-6 py-3 rounded-full shadow-md transition duration-300">
+          Show Game
+        </button>
+      </div>
+    </div>
+
+  </body>
+</html>

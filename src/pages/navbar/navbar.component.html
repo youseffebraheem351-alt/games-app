@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navbar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-r from-blue-900 via-purple-900 to-gray-800">
+
+  <!-- Navbar Section -->
+  <div class="pt-16 flex justify-center relative">
+    <div class="bg-gradient-to-r from-blue-900 via-purple-900 to-gray-800 text-white px-12 py-6 rounded-3xl flex items-center gap-6 shadow-lg w-[90%] max-w-6xl">
+      <img src="https://cdn-icons-png.flaticon.com/512/10699/10699572.png" class="w-8 h-8" alt="icon" />
+      <h1 class="text-2xl font-bold tracking-wide uppercase">Game Reviews</h1>
+
+      <!-- Toggle Button for Mobile -->
+      <button class="lg:hidden ml-auto p-2 rounded-md bg-indigo-600 text-white">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+
+      <!-- Navbar Links -->
+      <div class="flex gap-8 text-base font-semibold ml-auto hidden lg:flex">
+        <a routerLink="mmorpg" routerLinkActive="text-blue-300 font-bold" class="text-white hover:text-cyan-400 transition duration-200">MMORPG</a>
+        <a routerLink="shooter" routerLinkActive="text-blue-300 font-bold" class="text-white hover:text-cyan-400 transition duration-200">SHOOTER</a>
+        <a routerLink="sailing" routerLinkActive="text-blue-300 font-bold" class="text-white hover:text-cyan-400 transition duration-200">SAILING</a>
+        <a routerLink="permadeath" routerLinkActive="text-blue-300 font-bold" class="text-white hover:text-cyan-400 transition duration-200">PERMADEATH</a>
+        <a routerLink="superhero" routerLinkActive="text-blue-300 font-bold" class="text-white hover:text-cyan-400 transition duration-200">SUPERHERO</a>
+        <a routerLink="pixel" routerLinkActive="text-blue-300 font-bold" class="text-white hover:text-cyan-400 transition duration-200">PIXEL</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
