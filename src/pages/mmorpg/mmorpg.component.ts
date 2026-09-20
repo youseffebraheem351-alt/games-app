@@ -13,6 +13,11 @@ import { RouterLink } from '@angular/router';
 export class MmorpgComponent implements OnInit{
 constructor(private _MmorpgService:MmorpgService){}
 gamesdata:Gamesdata[]=[]
+
+
+
+
+
 ngOnInit(): void {
   this.getdata()
 }
